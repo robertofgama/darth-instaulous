@@ -27,7 +27,7 @@ definirCores() {
 }
 
 verificarInstalacaoExistente() {
-  if [[ -L $LOCAL ]]; then
+  if [ -L $LOCAL ]; then
     echo "${RED}Você já tem o Darth Instaulous instalado  ${RESET}"
 		exit 1
   fi
